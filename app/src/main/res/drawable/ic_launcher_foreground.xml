@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp"
-    android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-    <!-- Sudoku Board Frame -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M30,24 h48 c3.3,0 6,2.7 6,6 v48 c0,3.3 -2.7,6 -6,6 h-48 c-3.3,0 -6,-2.7 -6,-6 v-48 c0,-3.3 2.7,-6 6,-6 z" />
-
-    <!-- Grid Cutouts (9 cells) -->
-    <!-- Row 1 -->
-    <path
-        android:fillColor="#EAF1EE"
-        android:pathData="M28,28 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M47,28 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#EAF1EE"
-        android:pathData="M66,28 h14 v14 h-14 z" />
-
-    <!-- Row 2 -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M28,47 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#477A68"
-        android:pathData="M47,47 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M66,47 h14 v14 h-14 z" />
-
-    <!-- Row 3 -->
-    <path
-        android:fillColor="#EAF1EE"
-        android:pathData="M28,66 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M47,66 h14 v14 h-14 z" />
-    <path
-        android:fillColor="#EAF1EE"
-        android:pathData="M66,66 h14 v14 h-14 z" />
-
-    <!-- Grid Divider Lines -->
-    <path
-        android:fillColor="#00000000"
-        android:strokeColor="#242622"
-        android:strokeWidth="2.5"
-        android:strokeLineCap="round"
-        android:pathData="M44.5,26 v56 M63.5,26 v56 M26,44.5 h56 M26,63.5 h56" />
-
-    <!-- Center Accent Dot/Number in center sage square -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M52,50 h4 v8 h-4 z M52,50 h4 v2 h-4 z" />
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF" android:pathData="M32,25 h44 a7,7 0 0 1 7,7 v44 a7,7 0 0 1 -7,7 h-44 a7,7 0 0 1 -7,-7 v-44 a7,7 0 0 1 7,-7 z" />
+    <path android:fillColor="#EAF1EE" android:pathData="M31.000,31.000 h5.111 v5.111 h-5.111 z M41.222,36.111 h5.111 v5.111 h-5.111 z M36.111,41.222 h5.111 v5.111 h-5.111 z M51.444,46.333 h5.111 v5.111 h-5.111 z M46.333,51.444 h5.111 v5.111 h-5.111 z M71.889,56.556 h5.111 v5.111 h-5.111 z M31.000,61.667 h5.111 v5.111 h-5.111 z M56.556,66.778 h5.111 v5.111 h-5.111 z M66.778,71.889 h5.111 v5.111 h-5.111 z" />
+    <path android:fillColor="#B8C7C0" android:pathData="M35.861,31.000 h0.500 v46.000 h-0.500 z M40.972,31.000 h0.500 v46.000 h-0.500 z M51.194,31.000 h0.500 v46.000 h-0.500 z M56.306,31.000 h0.500 v46.000 h-0.500 z M66.528,31.000 h0.500 v46.000 h-0.500 z M71.639,31.000 h0.500 v46.000 h-0.500 z M31.000,35.861 h46.000 v0.500 h-46.000 z M31.000,40.972 h46.000 v0.500 h-46.000 z M31.000,51.194 h46.000 v0.500 h-46.000 z M31.000,56.306 h46.000 v0.500 h-46.000 z M31.000,66.528 h46.000 v0.500 h-46.000 z M31.000,71.639 h46.000 v0.500 h-46.000 z" />
+    <path android:fillColor="#F2B13E" android:pathData="M51.444,51.444 h5.111 v5.111 h-5.111 z" />
+    <path android:fillColor="#242622" android:pathData="M30.100,30.100 h1.800 v47.800 h-1.800 z M45.433,30.100 h1.800 v47.800 h-1.800 z M60.767,30.100 h1.800 v47.800 h-1.800 z M76.100,30.100 h1.800 v47.800 h-1.800 z M30.100,30.100 h47.800 v1.800 h-47.800 z M30.100,45.433 h47.800 v1.800 h-47.800 z M30.100,60.767 h47.800 v1.800 h-47.800 z M30.100,76.100 h47.800 v1.800 h-47.800 z" />
 </vector>
