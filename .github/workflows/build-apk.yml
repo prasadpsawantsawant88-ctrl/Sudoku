@@ -37,6 +37,11 @@ jobs:
             "platforms;android-36" \
             "build-tools;36.0.0"
 
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+
       - name: Generate debug keystore
         run: |
           keytool -genkeypair \
@@ -51,22 +56,16 @@ jobs:
             -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Build debug APK
-        run: |
-          if [ -f ./gradlew ]; then
-            chmod +x ./gradlew
-            ./gradlew assembleDebug
-          else
-            echo "Gradle wrapper not found."
-            exit 1
-          fi
+        run: gradle assembleDebug --stacktrace
 
       - name: Verify APK
         run: |
           APK="app/build/outputs/apk/debug/app-debug.apk"
-          test -f "$APK" || {
-            echo "APK was not generated."
+          if [ ! -f "$APK" ]; then
+            echo "APK was not generated at $APK"
+            find app/build/outputs -type f 2>/dev/null || true
             exit 1
-          }
+          fi
           ls -lh "$APK"
 
       - name: Upload APK
