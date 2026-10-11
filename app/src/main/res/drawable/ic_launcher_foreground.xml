@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Sudoku Board Frame -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,24 h48 c3.3,0 6,2.7 6,6 v48 c0,3.3 -2.7,6 -6,6 h-48 c-3.3,0 -6,-2.7 -6,-6 v-48 c0,-3.3 2.7,-6 6,-6 z" />
+
+    <!-- Grid Cutouts (9 cells) -->
+    <!-- Row 1 -->
+    <path
+        android:fillColor="#EAF1EE"
+        android:pathData="M28,28 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M47,28 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#EAF1EE"
+        android:pathData="M66,28 h14 v14 h-14 z" />
+
+    <!-- Row 2 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,47 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#477A68"
+        android:pathData="M47,47 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,47 h14 v14 h-14 z" />
+
+    <!-- Row 3 -->
+    <path
+        android:fillColor="#EAF1EE"
+        android:pathData="M28,66 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M47,66 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#EAF1EE"
+        android:pathData="M66,66 h14 v14 h-14 z" />
+
+    <!-- Grid Divider Lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#242622"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M44.5,26 v56 M63.5,26 v56 M26,44.5 h56 M26,63.5 h56" />
+
+    <!-- Center Accent Dot/Number in center sage square -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,50 h4 v8 h-4 z M52,50 h4 v2 h-4 z" />
+</vector>

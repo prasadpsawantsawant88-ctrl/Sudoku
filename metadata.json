@@ -1,0 +1,6 @@
+{
+  "name": "Sudoku",
+  "description": "Minimalist Sudoku game with procedural puzzle generation, guaranteed unique solutions, and intelligent difficulty.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
